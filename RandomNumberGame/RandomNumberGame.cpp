@@ -18,7 +18,7 @@ int main() {
 		correctNumber = rand() % 100;
 		for (int i = 0; i < 1;)
 		{
-			cout << "Please Guess: ";
+			cout << "Please Guess a number (0-100): ";
 			cin >> playerGuess;
 			diff = playerGuess - correctNumber;
 			absDiff = abs(diff);
