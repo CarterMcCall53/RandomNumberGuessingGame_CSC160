@@ -25,32 +25,26 @@ int main() {
 			if (absDiff > 50)
 			{
 				cout << "Frozen" << endl;
-				continue;
 			}
 			else if (absDiff > 25)
 			{
 				cout << "Cold" << endl;
-				continue;
 			}
 			else if (absDiff > 15)
 			{
 				cout << "Lukewarm" << endl;
-				continue;
 			}
 			else if (absDiff > 10)
 			{
 				cout << "Warm" << endl;
-				continue;
 			}
 			else if (absDiff > 5)
 			{
 				cout << "Hot" << endl;
-				continue;
 			}
 			else if (absDiff > 0)
 			{
 				cout << "Boiling" << endl;
-				continue;
 			}
 			else
 			{
