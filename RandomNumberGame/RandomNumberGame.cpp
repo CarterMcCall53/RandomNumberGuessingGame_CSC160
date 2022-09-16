@@ -18,7 +18,7 @@ int main() {
 	do
 	{
 		int guesses = 0;
-		correctNumber = rand() % 100;
+		correctNumber = rand() % 100; 
 		for (int i = 0; i < 1;)
 		{
 			cout << "Please Guess a number (0-100): ";
