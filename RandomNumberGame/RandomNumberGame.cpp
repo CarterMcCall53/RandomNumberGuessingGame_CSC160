@@ -3,6 +3,8 @@
 *  14 September 2022
 *  Purpose:
 *		Create a random number guessing game
+*  Modified 15 September 2022:
+*		Added guesses counter
 */
 
 #include <iostream>
@@ -15,6 +17,7 @@ int main() {
 	srand(time(0));
 	do
 	{
+		int guesses = 0;
 		correctNumber = rand() % 100;
 		for (int i = 0; i < 1;)
 		{
@@ -48,9 +51,12 @@ int main() {
 			}
 			else
 			{
-				cout << "CORRECT! Congratulations!" << endl;
+				guesses++;
+				cout << "CORRECT! You guessed the number in " << guesses << " guesses!" << endl;
 				i++;
+				continue;
 			}
+			guesses++;
 		}
 		do {
 			cout << "Do you want to play again? (Y|N): ";
